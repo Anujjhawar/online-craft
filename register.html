@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Register Page
+    </title>
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/login_register.css">
+    <link rel="stylesheet" type="text/css" href="css/login_register.css">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- theme stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- your stylesheet with modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/respond.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<body>
+        <!-- *** TOPBAR ***
+ _________________________________________________________ -->
+    <div id="top">
+        <div class="container">
+            <div class="col-md-12">
+                <ul class="menu">
+                  <li><h3 class="login_form">Register Form</h3></li>
+                </ul>
+            </div>
+        </div>
+     </div>   
+    <!-- *** NAVBAR ***
+ _________________________________________________________ -->
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+
+                <a class="navbar-brand home" href="index.html">
+                    <img src="img/logo1.png" alt="logo" class="hidden-xs" style="height: 60px">
+                </a>
+                <div class="navbar-buttons">
+                    <a class="btn btn-default navbar-toggle" href="basket.html">
+                    </a>
+                </div>
+            </div>
+            <!--/.navbar-header -->
+
+            <div class="navbar-collapse collapse" id="navigation">
+
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="index.html">Home</a>
+                    </li>
+                    <li class="active"><a href="about.html">About Us</a>
+                    </li>
+                    <li class="active"><a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#navbar -->
+<!--___________________________________________________________ -->
+
+<!-- /REGISTER FORM-->
+<div class="register-page">
+	<div class="form">
+	  <form class="register-form">
+      	<input type="text" placeholder="Name"/>
+        <input type="text" placeholder="User Name"/>
+      	<input type="password" placeholder="Password"/>
+      	<input type="text" placeholder="Email Address"/>
+      	<input type="text" placeholder="Contact Number"/>
+        <label id="checkMe">
+        <input type="checkbox" name="Artist" value="Artist" id="myCheck"  >Artist</label>
+        <input id="box" type="text" class="hider" placeholder="Account Number"/>
+        <input id="box" type="text" class="hider" placeholder="Adhaar Number"/>  
+        <button>Sign Up</button>
+      	<p class="message">Already registered? <a href="Login.html">Sign In</a></p>
+    </form>
+	</div>
+</div>
+  <div >
+    <div id="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 col-sm-6">
+                  <h4>Pages</h4>
+
+                        <ul>
+                            <li><a href="index.html">HOME</a>
+                            </li>
+                            <li><a href="about.html">About Us</a>
+                            </li>
+                            <li><a href="Category.html">Category</a>
+                            </li>
+                            <li><a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <h4>User section</h4>
+
+                        <ul>
+                            <li><a href="Login.html">Login</a>
+                            </li>
+                            <li><a href="register.html">Register</a>
+                            </li>
+                        </ul>    
+              </div>
+              <div class="col-md-6 col-sm-6">
+
+                        <h2>Where to find us</h2>
+
+                        <p><strong>ONLINE CRAFTS</strong>
+                            <br>451 Usha Nagar Extensions
+                            <br>452009
+                            <br>Indore
+                            <br>(Madhya Pradesh)
+                            <strong>India</strong>
+                        </p>
+
+                        <a href="contact.html">Go to contact page</a>
+                </div>
+          </div>
+                <!-- /.row -->
+      </div>
+            <!-- /.container -->
+    </div>
+  </div>
+        <!-- /#footer -->
+
+        <!-- *** FOOTER END *** -->
+
+        <!-- *** COPYRIGHT ***
+ _________________________________________________________ -->
+  <div id="copyright">
+      <div class="container">
+          <div class="col-md-6">
+              <p class="pull-left">© Copywrite@OnlineCrafts</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="pull-right">Powered By <a href="https://bootstrapious.com/e-commerce-templates">Anuj Jhawar</a> & <a href="https://fity.cz">Team</a>
+                    </p>
+                </div>
+      </div>
+  </div>
+        <!-- *** COPYRIGHT END *** -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+ $( document ).ready(function() {
+$(".hider").hide();
+  $('#checkMe :checkbox').click(function() {
+    // this will contain a reference to the checkbox   
+    if (this.checked) {
+        $(".hider").fadeIn(500);
+    } else {
+        $(".hider").fadeOut(500);
+    }
+});
+  });
+  </script>
+</body>
+</html>
