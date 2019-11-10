@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Obaju e-commerce template">
+    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
+    <meta name="keywords" content="">
+
+    <title>
+        Cart
+    </title>
+
+    <meta name="keywords" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+
+    <!-- styles -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">  
+    <script src="js/respond.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<body>
+    <!-- *** TOPBAR ***
+ _________________________________________________________ -->
+    <div id="top">
+        <div class="container">    
+            <div class="col-md-12">
+                <ul class="menu">
+                  <li><h3 class="login_form">Items in a Cart</h3></li>
+                </ul>
+            </div>
+        </div>
+     </div>   
+    <!-- *** NAVBAR ***
+ _________________________________________________________ -->
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+
+                <a class="navbar-brand home" href="index.html">
+                    <img src="img/logo1.png" alt="logo" class="hidden-xs" style="height: 60px">
+                </a>
+                <div class="navbar-buttons">
+                    <a class="btn btn-default navbar-toggle" href="basket.html">
+                    </a>
+                </div>
+            </div>
+            <!--/.navbar-header -->
+
+            <div class="navbar-collapse collapse" id="navigation">
+
+               
+
+            </div>
+            <!--/.nav-collapse -->
+
+            <div class="navbar-buttons">
+
+               
+                <!--/.nav-collapse -->         
+            </div>     
+            <!--/.nav-collapse -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#navbar -->
+
+    <!-- *** NAVBAR END *** -->
+
+    <div id="all">
+
+        <div id="content">
+            <div class="container">
+
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a>
+                        </li>
+                        <li>Items in a Cart</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-9" id="basket">
+
+                    <div class="box">
+
+                        <form method="post" action="checkout1.html">
+
+                            <h1>Shopping cart</h1>
+                            <p class="text-muted">You currently have 3 item(s) in your cart.</p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Product</th>
+                                            <th>Quantity</th>
+                                            <th>Unit price</th>
+                                            <th>Discount</th>
+                                            <th colspan="2">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="img/product2.jpg">
+                                                    <img src="img/product2.jpg" alt="Village Painting">
+                                                </a>
+                                            </td>
+                                            <td><a href="#">Village Painting</a>
+                                            </td>
+                                            <td>
+                                                <input type="number" value="2" class="form-control">
+                                            </td>
+                                            <td>₹123.00</td>
+                                            <td>₹0.00</td>
+                                            <td>₹246.00</td>
+                                            <td><a href="#"><i class="fa fa-trash-o"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="img/product1.jpg">
+                                                    <img src="img/product1.jpg" alt="Duck Painting">
+                                                </a>
+                                            </td>
+                                            <td><a href="#">Duck Painting</a>
+                                            </td>
+                                            <td>
+                                                <input type="number" value="1" class="form-control">
+                                            </td>
+                                            <td>₹200.00</td>
+                                            <td>₹0.00</td>
+                                            <td>₹200.00</td>
+                                            <td><a href="#"><i class="fa fa-trash-o"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th colspan="5">Total</th>
+                                            <th colspan="2">₹446.00</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                            </div>
+                            <!-- /.table-responsive -->
+
+                            <div class="box-footer">
+                                <div class="pull-left">
+                                    <a href="index.html" class="btn btn-default"><i class="fa fa-chevron-left"></i> Continue shopping</a>
+                                </div>
+                                <div class="pull-right">
+                                    
+                                    <button type="submit" class="btn btn-primary">Proceed to checkout <i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                    <!-- /.box -->
+
+
+                </div>
+                <!-- /.col-md-9 -->
+
+                <div class="col-md-3">
+                    <div class="box" id="order-summary">
+                        <div class="box-header">
+                            <h3>Order summary</h3>
+                        </div>
+                        <p class="text-muted">Shipping and additional costs are calculated based on the values you have entered.</p>
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Order subtotal</td>
+                                        <th>₹446.00</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping and handling</td>
+                                        <th>₹10.00</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Tax</td>
+                                        <th>₹0.00</th>
+                                    </tr>
+                                    <tr class="total">
+                                        <td>Total</td>
+                                        <th>₹456.00</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+				    </span>
+                            </div>
+                            <!-- /input-group -->
+                        </form>
+                    </div>
+
+                </div>
+                <!-- /.col-md-3 -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        <!-- *** FOOTER ***
+       <!-- *** FOOTER ***
+ _________________________________________________________ -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <h4>Pages</h4>
+
+                        <ul>
+                            <li><a href="index.html">HOME</a>
+                            </li>
+                            <li><a href="about.html">About Us</a>
+                            </li>
+                            <li><a href="Category.html">Category</a>
+                            </li>
+                            <li><a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <h4>User section</h4>
+
+                        <ul>
+                            <li><a href="Login.html">Login</a>
+                            </li>
+                            <li><a href="register.html">Register</a>
+                            </li>
+                        </ul>
+
+                       
+                    </div>
+                    <!-- /.col-md-3 -->
+
+
+                    <div class="col-md-6 col-sm-6">
+
+                        <h2>Where to find us</h2>
+
+                        <p><strong>ONLINE CRAFTS</strong>
+                            <br>451 Usha Nagar Extensions
+                            <br>452009
+                            <br>Indore
+                            <br>(Madhya Pradesh)
+                            <strong>India</strong>
+                        </p>
+
+                        <a href="contact.html">Go to contact page</a>
+                    </div>
+                    <!-- /.col-md-3 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#footer -->
+
+        <!-- *** FOOTER END *** -->
+
+
+
+
+        <!-- *** COPYRIGHT ***
+ _________________________________________________________ -->
+        <div id="copyright">
+            <div class="container">
+                <div class="col-md-6">
+                    <p class="pull-left">© Copywrite@OnlineCrafts</p>
+
+                </div>
+                <div class="col-md-6">
+                    <p class="pull-right">Powered By <a href="https://bootstrapious.com/e-commerce-templates">Anuj Jhawar</a> & <a href="https://fity.cz">Team</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- *** COPYRIGHT END *** -->
+
+
+    </div>
+    <!-- /#all -->
+
+
+    
+
+    <!-- *** SCRIPTS TO INCLUDE ***
+ _________________________________________________________ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+
+
+
+</body>
+
+</html>
